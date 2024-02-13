@@ -1,0 +1,56 @@
+.notification-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f0f0f0; 
+  animation: fadeIn 0.5s ease-in-out; 
+  }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.notification-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f0f0f0; /* Background color for the entire page */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in animation for the page */
+}
+
+.notification-container {
+  min-height: 80vh;
+  width: 100vw;
+  margin: 80px 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideIn 0.8s ease-out; /* Slide-in animation for the card */
+}
+
+.notification{
+  font-weight: bolder;
+  font-size: 1.8em;
+  position: absolute;
+  left: 40px;
+  top: 25px;
+}
+.hr{
+  margin: 15px 0px 15px 0px;
+}
+
+.notification-container h3{
+ font-size: 1.5em;
+ font-weight: bolder;
+}

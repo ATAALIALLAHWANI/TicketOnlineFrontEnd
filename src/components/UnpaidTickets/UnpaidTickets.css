@@ -1,0 +1,402 @@
+/* styles.css (أو اسم ملف CSS الذي تستخدمه) */
+
+/* Styles for BusTickets component */
+.bus-tickets {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    max-height: 600px; /* ارتفاع أقصى للعرض قبل ظهور شريط التمرير */
+  }
+  
+  /* تنسيق عنوان Bus Reservation Tickets مع تأثيرات وإنميشن */
+  .h11 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out, colorChange 3s infinite alternate;
+  }
+  
+  /* تأثير الانزلاق للعنوان */
+  @keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  /* تأثير تغيير لون العنوان بشكل دوري */
+  @keyframes colorChange {
+    0% {
+        color: #ff6600;
+    }
+    50% {
+        color: #4CAF50;
+    }
+    100% {
+        color: #ff6600;
+    }
+  }
+  
+  /* Ticket card styles */
+  .ticket-list {
+    display: flex;
+    flex-direction: column; /* Stacking cards vertically */
+    align-items: center; /* Center cards horizontally */
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* .ticket-card {
+    border-radius: 12px;
+    padding: 15px; 
+    width: 350px; 
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: scale(1);
+    margin-bottom: 20px;
+  } */
+  
+  /* .ticket-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* إنميشن لظهور البطاقة */
+  @keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  /* Title styles for tickets */
+  .ticket-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    animation: colorChange 5s infinite alternate;
+  }
+  
+  /* تأثير تغيير لون النص بشكل دوري */
+  @keyframes colorChange {
+    0% {
+        color: #333;
+    }
+    50% {
+        color: #ff6600;
+    }
+    100% {
+        color: #333;
+    }
+  }
+  
+  /* Additional ticket information styles */
+  .ticket-card p {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  /* styles.css (or your preferred CSS file) */
+
+/* General styles */
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #011422;
+    color: white;
+  } */
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Unpaid tickets styles */
+  .unpaid-tickets {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    color: #333;
+  } */
+  
+  /* h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #ff6600;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  } */
+  
+  .ticket-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ticket-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    background-color: #011422; /* تغيير لون البطاقة إلى اللون الأزرق */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .ticket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #011422; /* تغيير لون البطاقة عند التحويل إليها */
+    color: #fff;
+  }
+  
+  /* The rest of animations, colors, and styles you want to keep */
+  /* ... */
+  /* styles.css (أو اسم ملف CSS الذي تستخدمه) */
+
+/* Styles for BusTickets component */
+.bus-tickets {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    max-height: 600px; /* ارتفاع أقصى للعرض قبل ظهور شريط التمرير */
+   
+  }
+  
+  /* تنسيق عنوان Bus Reservation Tickets مع تأثيرات وإنميشن */
+  .h11 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out, colorChange 3s infinite alternate;
+  }
+  
+  /* تأثير الانزلاق للعنوان */
+  @keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  /* تأثير تغيير لون العنوان بشكل دوري */
+  @keyframes colorChange {
+    0% {
+        color: #ff6600;
+    }
+    50% {
+        color: #4CAF50;
+    }
+    100% {
+        color: #ff6600;
+    }
+  }
+  
+  /* Ticket card styles */
+  .ticket-list {
+    display: flex;
+    flex-direction: column; /* Stacking cards vertically */
+    align-items: center; /* Center cards horizontally */
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* styles.css */
+  
+  /* ... (previous styles) ... */
+  
+  /* .ticket-card {
+    border-radius: 12px;
+    padding: 15px; 
+    width: 350px; 
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: scale(1);
+    margin-bottom: 20px;
+  } */
+  
+  /* ... (other styles) ... */
+  
+  
+  /* Hover effect for ticket cards */
+  /* .ticket-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+    color: #fff;
+  } */
+  
+  /* إنميشن لظهور البطاقة */
+  @keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  /* Title styles for tickets */
+  .ticket-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    animation: colorChange 5s infinite alternate;
+  }
+  
+  /* تأثير تغيير لون النص بشكل دوري */
+  @keyframes colorChange {
+    0% {
+        color: #333;
+    }
+    50% {
+        color: #ff6600;
+    }
+    100% {
+        color: #333;
+    }
+  }
+  
+  /* Additional ticket information styles */
+  .ticket-card p {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  /******************************************/
+
+
+/* styles.css (or your preferred CSS file) */
+
+/* General styles */
+
+  
+  
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .button-group button.accept {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .button-group button.delete {
+    background-color: #ff3333;
+    color: #fff;
+  }
+  
+  .button-group button:hover {
+    filter: brightness(1.2);
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .button {
+    display: block;
+  }
+  }
+
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .spinner {
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

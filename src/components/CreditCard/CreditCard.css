@@ -1,0 +1,146 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    
+  body{
+    display: flex;
+    flex-direction: column;
+    }
+  
+  .bus{
+    margin-bottom: 5px;
+    height: 400px;
+  } 
+  
+  .PaymentInfo-container {
+      position: relative;
+      width: 80%;
+      background-color: white;
+      border-collapse: collapse;
+      overflow: hidden;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-bottom: 90px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 7px;
+    }
+    
+    svg{
+      margin: 15px 0px 0px 10px; 
+    }
+    
+    .PaymentInfo-header {
+      background-color: #000; 
+      color: #fff;
+      font-size: 1rem;
+      padding: 10px 15PX;
+    }
+    
+    .Price {
+      font-size: 1.2rem;
+      color: #333; 
+      margin: 0px 30px 20px 30px;
+      font-size: 25px;
+    }
+  
+    .Continuationn{
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background-color: #000;
+      color: #fff;
+      padding: 10PX 30px;
+      cursor: pointer;
+    }
+
+    .Cancel{
+      position: absolute;
+      bottom: 15px;
+      right: 160px;
+      background-color: #999;
+      color: #fff;
+      padding: 10PX 30px;
+      cursor: pointer;
+    }
+  
+     span{
+      color: white;
+      cursor: pointer;
+      }
+  
+      .link{
+        text-decoration: none;
+        color: #fff;
+      }
+  
+    
+        .iinputs{
+          margin-left: 12px;
+          margin-top: 25px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        
+        .iinput,.iiinput{
+          display: flex;
+          margin-left: 15px;
+          width: 370px;
+          height: 50px;
+          background: #eaeaea;
+          border-radius: 6px;
+        }
+
+        
+        .iinput svg{
+          margin: 10px 15px;
+        }
+
+        .iiinput svg{
+            margin: 10px 11px;
+        }
+          
+        .iinput input, .iiinput input{
+          height: 50px;
+          width: 400px;
+          background: transparent;
+          border: none;
+          outline: none;
+          color: #797979;
+          font-size: 18px;
+        } 
+      
+        .error-messagee{
+          font-size: 14px;
+          color: red;
+          margin-top: 0px;
+          margin-left: 15px;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .Continuationn,.Cancel{
+              display: flex;
+              padding: 10PX 20px;
+            }
+            .Cancel{
+              right: 140px;
+            }
+            .Price{
+              margin-bottom: 20px;
+            }
+            .PaymentInfo-container{
+              width: 95%;
+            }
+            .iinputs{
+              align-items: center;
+              margin-left: 0px;
+            }
+            .iinput,.iiinput{
+              margin-left: 0;
+            }
+          }
+       
+           

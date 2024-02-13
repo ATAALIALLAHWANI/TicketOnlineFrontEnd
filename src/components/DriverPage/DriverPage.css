@@ -1,0 +1,118 @@
+/* src/components/DropdownList.css */
+body {
+    margin: 0;
+    /* overflow: hidden; */
+     /* للتأكد من أن الصورة تغطي الصفحة بالكامل */
+  }
+  
+  .dropdown-container {
+    text-align: center;
+    width: 1000;
+    height: 1000;
+  }
+  
+  .image-container {
+    position: relative;
+    height: 100vh; /* ارتفاع الصورة يمتد ليشغل ارتفاع الصفحة بالكامل */
+    /* overflow: hidden; */
+  }
+  
+  .image {
+    width: 100%; /* لتمتد الصورة عرضيًا لتغطي الصفحة بالكامل */
+    height: 100%;
+    object-fit: cover; /* يحافظ على تناسق الصورة عند تغيير الأبعاد */
+  }
+  
+  .dropdown-above-image {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* لتجعل الخلفية شفافة */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    animation: slideIn 0.5s ease-out forwards, fadeIn 0.5s ease-out forwards;
+
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideIn {
+    from {
+      /* transform: translate(-50%, -60%);  */
+    }
+    to {
+      /* transform: translate(-50%, -50%); */
+    }
+  }
+ .navbar h2 {
+    background-color: #000; /* Background color for the header */
+    color: #fff; /* Text color */
+    padding:15px 25px; /* Padding to provide spacing within the header */
+    text-align: left; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+  h2:hover {
+    color: #5d7a9a; /* Change text color on hover */
+  }
+  select:hover,
+  select:focus {
+  border: 1px solid #ffcc00; /* Change border color on hover/focus */
+}
+option:hover {
+    background-color: #ffcc00; /* Change background color on hover */
+    color: #15d6a9; /* Change text color on hover */
+  }
+
+  select {
+    padding: 8px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  option:hover {
+    background-color: #ffcc00; /* Change background color on hover */
+    color: green; /* Change text color on hover to green */
+  }
+
+  .noti{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 0.7rem;
+    white-space: nowrap;
+    margin-left: 80%;
+  }
+  .noti i{
+    padding-right: 10px;
+  }
+
+  .h111 {
+    margin-top: 30px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }

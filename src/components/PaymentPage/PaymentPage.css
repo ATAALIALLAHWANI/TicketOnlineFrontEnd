@@ -1,0 +1,93 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+    
+  body{
+    display: flex;
+    flex-direction: column;
+    }
+  
+  .bus{
+    margin-bottom: 5px;
+    height: 400px;
+  } 
+  
+  .Payment-container {
+      position: relative;
+      width: 80%;
+      background-color: white;
+      border-collapse: collapse;
+      overflow: hidden;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-bottom: 90px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 7px;
+    }
+    
+    svg{
+      margin: 15px 0px 0px 10px; 
+    }
+    
+    .Payment-header {
+      background-color: #000; 
+      color: #fff;
+      font-size: 1rem;
+      padding: 10px 15PX;
+    }
+    
+    .Price {
+      font-size: 1.2rem;
+      color: #333; 
+      margin: 0px 30px 20px 30px;
+      font-size: 25px;
+    }
+  
+    .Continuationn{
+      padding: 10PX 30px 10px 30px;
+    }
+
+    .Cancel{
+      padding: 10PX 35px 10px 35px;
+    }
+  
+     span{
+      color: white;
+      cursor: pointer;
+      }
+  
+      .link{
+        text-decoration: none;
+        color: #fff;
+      }
+  
+    @media screen and (max-width: 600px) {
+      .Continuationn,.Cancel{
+        display: flex;
+        padding: 10PX 20px 10px 20px;
+      }
+      .Cancel{
+        right: 140px;
+      }
+      .Price{
+        margin-bottom: 20px;
+      }
+      .Payment-container{
+        width: 95%;
+      }
+      
+    }
+
+    .radio{
+        margin: 25px;
+        font-size: 20px;
+    }
+
+    
+
+
+    
+    
+    
